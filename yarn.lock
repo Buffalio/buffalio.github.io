@@ -9703,7 +9703,7 @@ thenify-all@^1.0.0:
   dependencies:
     any-promise "^1.0.0"
 
-tinacms@2.3.0, tinacms@^2.2.9:
+tinacms@2.3.0, tinacms@^2.3.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/tinacms/-/tinacms-2.3.0.tgz#519200e32c56b3d0b65222c797f912de67c0b031"
   integrity sha512-8+VPEcdGMPTpxvPeIGX0UGCCwalkGrk1w3Xy6kG/BWD4DfaWgp8sCTcLdmeZJZ0pYPOH2rKOrAVDKKJXZHK64A==
