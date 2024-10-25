@@ -1,5 +1,8 @@
-import Filename from './[...filename]/page';
+import HomePage from './[...filename]/page';
 
-const Index = Filename;
 
-export default Index;
+export const getStaticProps = async () => {
+  return { params: { filename: 'home' } };
+}
+
+export default HomePage;
