@@ -48,8 +48,8 @@ importers:
         specifier: ^3.4.10
         version: 3.4.10
       tinacms:
-        specifier: ^2.2.9
-        version: 2.2.9(@types/react@18.3.4)(abstract-level@1.0.4)(immer@10.1.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(scheduler@0.23.2)(sucrase@3.35.0)(typescript@5.5.4)
+        specifier: ^2.3.0
+        version: 2.3.0(@types/react@18.3.4)(abstract-level@1.0.4)(immer@10.1.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(scheduler@0.23.2)(sucrase@3.35.0)(typescript@5.5.4)
       typescript:
         specifier: ^5.5.4
         version: 5.5.4
@@ -980,12 +980,6 @@ packages:
 
   '@floating-ui/react-dom@1.3.0':
     resolution: {integrity: sha512-htwHm67Ji5E/pROEAr7f8IKFShuiCKHwUC/UY4vC3I5jiSvGFAYnSYiZO5MlGmads+QqvUkR9ANHEguGrDv72g==}
-    peerDependencies:
-      react: '>=16.8.0'
-      react-dom: '>=16.8.0'
-
-  '@floating-ui/react-dom@2.1.1':
-    resolution: {integrity: sha512-4h84MJt3CHrtG18mGsXuLCHMrug49d7DFkU0RMIyshRveBeyV2hmV/pDaF2Uxtu8kgq5r46llp5E5FQiR0K2Yg==}
     peerDependencies:
       react: '>=16.8.0'
       react-dom: '>=16.8.0'
@@ -2076,14 +2070,8 @@ packages:
     resolution: {integrity: sha512-Z7clcnO+6e7/X7TkI6719eDQrd75GdQX9G/Od98d6M1H4Gw/B018tenSu+5Ttjaf0Vc28LRNakem3BZN+EOyyA==}
     hasBin: true
 
-  '@tinacms/graphql@1.5.5':
-    resolution: {integrity: sha512-oNj6XMYvfPqcIn7HmdRTjuGZFaGR9kJjuwaxpW4HrEla0or9jErfCejNY6TucWJELub53BEdQP2GAn5GDENHPg==}
-
   '@tinacms/graphql@1.5.6':
     resolution: {integrity: sha512-eoLJnudHXUtum8q1DfTAzliQA08fpLFa4bkHA+L/RmNqLtrLOPgydM8Xp6y3du2lnjl31tlEtMCPFeimh2WD6A==}
-
-  '@tinacms/mdx@1.4.5':
-    resolution: {integrity: sha512-IiFDTm2xtNmwMVNwfx75+jeal6fbQ91MNBfe9da0SjniMXc2H7rb9qRMeZ2ci4E4QGH48CCnccngsV/nKKRHjw==}
 
   '@tinacms/mdx@1.5.0':
     resolution: {integrity: sha512-3IQTK5EH33l5xGiSwKWVkyJzERk/i7ZbToEwBHyc9vW79w+8YpjWGWvoH5h1/nEPDu3oHjWOVf+BgzFMyJfiwQ==}
@@ -2093,20 +2081,11 @@ packages:
     peerDependencies:
       fs-extra: ^9.0.1
 
-  '@tinacms/schema-tools@1.6.5':
-    resolution: {integrity: sha512-9oClfJq/KLfvzeEbycg46Ne5kM5jbHzXz0OF2jmBEqalLvPAQ3FQz5ldvLIG5pqonEJhUE6DItvJF93uLx6mrQ==}
-    peerDependencies:
-      react: '>=16.14.0'
-      yup: ^0.32.0
-
   '@tinacms/schema-tools@1.6.6':
     resolution: {integrity: sha512-kwDoRRUa6MqYvP1HWlAkmhslj2pV2wJbZncRsw0MRmWnSNQ+FB0xkP6xy/Oz1Z1ojKOaC2XUrnc71PkXEF3ogw==}
     peerDependencies:
       react: '>=16.14.0'
       yup: ^0.32.0
-
-  '@tinacms/search@1.0.32':
-    resolution: {integrity: sha512-PzM4WJjLo6SanZOANW9Cm/zjdzJPkGb3oalZGw6Mr7GVcHBesWcnrgmsqIXDZ9AxaJd5hxPnG856+a1ObQLo1w==}
 
   '@tinacms/search@1.0.33':
     resolution: {integrity: sha512-aoaRhm7awhO4JUB0EQzf66dUAylBG9fUsjcmD4dPAESAme3u6K7gtxnvl5GOxer6J8EH3Voe10y1Ym7ix17hDA==}
@@ -6065,12 +6044,6 @@ packages:
   thenify@3.3.1:
     resolution: {integrity: sha512-RVZSIV5IG10Hk3enotrhvz0T9em6cyHBLkH/YAZuKqd8hRkKhSfCGIcP2KUY0EPxndzANBmNllzWPwak+bheSw==}
 
-  tinacms@2.2.9:
-    resolution: {integrity: sha512-3wJEYiwioRF+TmubSzd1M0zWye+5aRt7gPeDMTRZuJjqwWm7Rgt2BjulFiYoNFVnvqtHhnybUtPE8FzmZIRY+w==}
-    peerDependencies:
-      react: '>=16.14.0'
-      react-dom: '>=16.14.0'
-
   tinacms@2.3.0:
     resolution: {integrity: sha512-8+VPEcdGMPTpxvPeIGX0UGCCwalkGrk1w3Xy6kG/BWD4DfaWgp8sCTcLdmeZJZ0pYPOH2rKOrAVDKKJXZHK64A==}
     peerDependencies:
@@ -7626,7 +7599,7 @@ snapshots:
 
   '@floating-ui/core@1.6.7':
     dependencies:
-      '@floating-ui/utils': 0.2.7
+      '@floating-ui/utils': 0.2.8
 
   '@floating-ui/dom@1.6.11':
     dependencies:
@@ -7634,12 +7607,6 @@ snapshots:
       '@floating-ui/utils': 0.2.8
 
   '@floating-ui/react-dom@1.3.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
-    dependencies:
-      '@floating-ui/dom': 1.6.11
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
-
-  '@floating-ui/react-dom@2.1.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@floating-ui/dom': 1.6.11
       react: 18.3.1
@@ -7661,7 +7628,7 @@ snapshots:
 
   '@floating-ui/react@0.26.22(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@floating-ui/react-dom': 2.1.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@floating-ui/react-dom': 2.1.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@floating-ui/utils': 0.2.7
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
@@ -8927,11 +8894,11 @@ snapshots:
       - terser
       - ts-node
 
-  '@tinacms/graphql@1.5.5(react@18.3.1)(typescript@5.5.4)':
+  '@tinacms/graphql@1.5.6(react@18.3.1)(typescript@5.5.4)':
     dependencies:
       '@iarna/toml': 2.2.5
-      '@tinacms/mdx': 1.4.5(react@18.3.1)(typescript@5.5.4)(yup@0.32.11)
-      '@tinacms/schema-tools': 1.6.5(react@18.3.1)(yup@0.32.11)
+      '@tinacms/mdx': 1.5.0(react@18.3.1)(typescript@5.5.4)(yup@0.32.11)
+      '@tinacms/schema-tools': 1.6.6(react@18.3.1)(yup@0.32.11)
       abstract-level: 1.0.4
       date-fns: 2.30.0
       fast-glob: 3.3.2
@@ -8987,9 +8954,9 @@ snapshots:
       - supports-color
       - typescript
 
-  '@tinacms/mdx@1.4.5(react@18.3.1)(typescript@5.5.4)(yup@0.32.11)':
+  '@tinacms/mdx@1.5.0(react@18.3.1)(typescript@5.5.4)(yup@0.32.11)':
     dependencies:
-      '@tinacms/schema-tools': 1.6.5(react@18.3.1)(yup@0.32.11)
+      '@tinacms/schema-tools': 1.6.6(react@18.3.1)(yup@0.32.11)
       acorn: 8.8.2
       ccount: 2.0.1
       estree-util-is-identifier-name: 2.1.0
@@ -9025,9 +8992,9 @@ snapshots:
       - typescript
       - yup
 
-  '@tinacms/mdx@1.4.5(react@18.3.1)(typescript@5.5.4)(yup@1.4.0)':
+  '@tinacms/mdx@1.5.0(react@18.3.1)(typescript@5.5.4)(yup@1.4.0)':
     dependencies:
-      '@tinacms/schema-tools': 1.6.5(react@18.3.1)(yup@1.4.0)
+      '@tinacms/schema-tools': 1.6.6(react@18.3.1)(yup@1.4.0)
       acorn: 8.8.2
       ccount: 2.0.1
       estree-util-is-identifier-name: 2.1.0
@@ -9146,22 +9113,6 @@ snapshots:
     transitivePeerDependencies:
       - encoding
 
-  '@tinacms/schema-tools@1.6.5(react@18.3.1)(yup@0.32.11)':
-    dependencies:
-      picomatch-browser: 2.2.6
-      react: 18.3.1
-      url-pattern: 1.0.3
-      yup: 0.32.11
-      zod: 3.23.8
-
-  '@tinacms/schema-tools@1.6.5(react@18.3.1)(yup@1.4.0)':
-    dependencies:
-      picomatch-browser: 2.2.6
-      react: 18.3.1
-      url-pattern: 1.0.3
-      yup: 1.4.0
-      zod: 3.23.8
-
   '@tinacms/schema-tools@1.6.6(react@18.3.1)(yup@0.32.11)':
     dependencies:
       picomatch-browser: 2.2.6
@@ -9178,10 +9129,10 @@ snapshots:
       yup: 1.4.0
       zod: 3.23.8
 
-  '@tinacms/search@1.0.32(abstract-level@1.0.4)(react@18.3.1)(sucrase@3.35.0)(typescript@5.5.4)(yup@1.4.0)':
+  '@tinacms/search@1.0.33(abstract-level@1.0.4)(react@18.3.1)(sucrase@3.35.0)(typescript@5.5.4)(yup@1.4.0)':
     dependencies:
-      '@tinacms/graphql': 1.5.5(react@18.3.1)(typescript@5.5.4)
-      '@tinacms/schema-tools': 1.6.5(react@18.3.1)(yup@1.4.0)
+      '@tinacms/graphql': 1.5.6(react@18.3.1)(typescript@5.5.4)
+      '@tinacms/schema-tools': 1.6.6(react@18.3.1)(yup@1.4.0)
       memory-level: 1.0.0
       search-index: 4.0.0(abstract-level@1.0.4)
       sqlite-level: 1.2.0(sucrase@3.35.0)
@@ -14089,7 +14040,7 @@ snapshots:
     dependencies:
       any-promise: 1.3.0
 
-  tinacms@2.2.9(@types/react@18.3.4)(abstract-level@1.0.4)(immer@10.1.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(scheduler@0.23.2)(sucrase@3.35.0)(typescript@5.5.4):
+  tinacms@2.3.0(@types/react@18.3.4)(abstract-level@1.0.4)(immer@10.1.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(scheduler@0.23.2)(sucrase@3.35.0)(typescript@5.5.4):
     dependencies:
       '@ariakit/react': 0.4.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@floating-ui/dom': 1.6.11
@@ -14107,9 +14058,9 @@ snapshots:
       '@radix-ui/react-toolbar': 1.1.0(@types/react@18.3.4)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@radix-ui/react-tooltip': 1.1.2(@types/react@18.3.4)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@react-hook/window-size': 3.1.1(react@18.3.1)
-      '@tinacms/mdx': 1.4.5(react@18.3.1)(typescript@5.5.4)(yup@1.4.0)
-      '@tinacms/schema-tools': 1.6.5(react@18.3.1)(yup@1.4.0)
-      '@tinacms/search': 1.0.32(abstract-level@1.0.4)(react@18.3.1)(sucrase@3.35.0)(typescript@5.5.4)(yup@1.4.0)
+      '@tinacms/mdx': 1.5.0(react@18.3.1)(typescript@5.5.4)(yup@1.4.0)
+      '@tinacms/schema-tools': 1.6.6(react@18.3.1)(yup@1.4.0)
+      '@tinacms/search': 1.0.33(abstract-level@1.0.4)(react@18.3.1)(sucrase@3.35.0)(typescript@5.5.4)(yup@1.4.0)
       '@udecode/cn': 33.0.0(@types/react@18.3.4)(class-variance-authority@0.7.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(tailwind-merge@2.5.2)
       '@udecode/plate': 36.5.9(@types/react@18.3.4)(immer@10.1.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(scheduler@0.23.2)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.107.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(slate@0.103.0))(slate@0.103.0)
       '@udecode/plate-autoformat': 36.5.6(@udecode/plate-common@36.5.9(@types/react@18.3.4)(immer@10.1.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(scheduler@0.23.2)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.107.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(slate@0.103.0))(slate@0.103.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.107.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(slate@0.103.0))(slate@0.103.0)
@@ -14119,12 +14070,13 @@ snapshots:
       '@udecode/plate-common': 36.5.9(@types/react@18.3.4)(immer@10.1.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(scheduler@0.23.2)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.107.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(slate@0.103.0))(slate@0.103.0)
       '@udecode/plate-floating': 36.3.8(@udecode/plate-common@36.5.9(@types/react@18.3.4)(immer@10.1.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(scheduler@0.23.2)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.107.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(slate@0.103.0))(slate@0.103.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.107.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(slate@0.103.0))(slate@0.103.0)
       '@udecode/plate-heading': 36.0.12(@udecode/plate-common@36.5.9(@types/react@18.3.4)(immer@10.1.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(scheduler@0.23.2)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.107.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(slate@0.103.0))(slate@0.103.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.107.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(slate@0.103.0))(slate@0.103.0)
-      '@udecode/plate-indent': 36.0.0(@udecode/plate-common@36.5.9(@types/react@18.3.4)(immer@10.1.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(scheduler@0.23.2)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.107.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(slate@0.103.0))(slate@0.103.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.107.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(slate@0.103.0))(slate@0.103.0)
       '@udecode/plate-indent-list': 36.5.2(@udecode/plate-common@36.5.9(@types/react@18.3.4)(immer@10.1.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(scheduler@0.23.2)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.107.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(slate@0.103.0))(slate@0.103.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.107.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(slate@0.103.0))(slate@0.103.0)
       '@udecode/plate-link': 36.5.9(@udecode/plate-common@36.5.9(@types/react@18.3.4)(immer@10.1.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(scheduler@0.23.2)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.107.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(slate@0.103.0))(slate@0.103.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.107.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(slate@0.103.0))(slate@0.103.0)
       '@udecode/plate-list': 36.5.2(@udecode/plate-common@36.5.9(@types/react@18.3.4)(immer@10.1.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(scheduler@0.23.2)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.107.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(slate@0.103.0))(slate@0.103.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.107.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(slate@0.103.0))(slate@0.103.0)
       '@udecode/plate-paragraph': 36.0.0(@udecode/plate-common@36.5.9(@types/react@18.3.4)(immer@10.1.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(scheduler@0.23.2)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.107.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(slate@0.103.0))(slate@0.103.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.107.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(slate@0.103.0))(slate@0.103.0)
+      '@udecode/plate-resizable': 36.0.0(@udecode/plate-common@36.5.9(@types/react@18.3.4)(immer@10.1.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(scheduler@0.23.2)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.107.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(slate@0.103.0))(slate@0.103.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.107.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(slate@0.103.0))(slate@0.103.0)
       '@udecode/plate-slash-command': 36.0.0(@udecode/plate-common@36.5.9(@types/react@18.3.4)(immer@10.1.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(scheduler@0.23.2)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.107.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(slate@0.103.0))(slate@0.103.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.107.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(slate@0.103.0))(slate@0.103.0)
+      '@udecode/plate-table': 36.5.8(@udecode/plate-common@36.5.9(@types/react@18.3.4)(immer@10.1.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(scheduler@0.23.2)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.107.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(slate@0.103.0))(slate@0.103.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.107.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(slate@0.103.0))(slate@0.103.0)
       class-variance-authority: 0.7.0
       clsx: 2.1.1
       cmdk: 1.0.0(@types/react@18.3.4)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -14141,6 +14093,7 @@ snapshots:
       lodash.get: 4.4.2
       lodash.set: 4.3.2
       lucide-react: 0.424.0(react@18.3.1)
+      mermaid: 9.3.0
       moment: 2.29.4
       monaco-editor: 0.31.0
       prism-react-renderer: 2.4.0(react@18.3.1)
