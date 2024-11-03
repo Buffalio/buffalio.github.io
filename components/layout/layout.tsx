@@ -10,9 +10,10 @@ type LayoutProps = PropsWithChildren & {
 };
 
 export default async function Layout({ children, rawPageData }: LayoutProps) {
-  const { data: globalData } = await client.queries.global({
-    relativePath: "index.json",
-  });
+  const { data: globalData } = await client.queries.global(
+    { relativePath: "index.json" },
+    { fetchOptions: { next: { revalidate: 30 }  } },
+  );
 
   return (
     <LayoutProvider globalSettings={globalData.global} pageData={rawPageData}>

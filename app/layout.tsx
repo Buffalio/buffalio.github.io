@@ -32,9 +32,10 @@ export default async function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const globalQuery = await client.queries.global({
-    relativePath: "index.json",
-  });
+  const globalQuery = await client.queries.global(
+    { relativePath: "index.json" },
+    { fetchOptions: { next: { revalidate: 30 }  } },
+  );
   const global = globalQuery.data.global;
 
   const selectFont = (fontName: string) => {
