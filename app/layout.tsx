@@ -5,6 +5,7 @@ import { Inter as FontSans, Lato, Nunito } from "next/font/google";
 import { cn } from "../lib/utils";
 import { Metadata } from "next";
 import client from "../tina/__generated__/client";
+import { NO_CACHE_POLICY } from "../lib/query";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -32,10 +33,10 @@ export default async function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const globalQuery = await client.queries.global(
-    { relativePath: "index.json" },
-    { fetchOptions: { next: { revalidate: 30 }  } },
-  );
+  const globalQuery = await client.queries.global({
+    relativePath: "index.json",
+  }, NO_CACHE_POLICY);
+
   const global = globalQuery.data.global;
 
   const selectFont = (fontName: string) => {

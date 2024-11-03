@@ -4,16 +4,16 @@ import client from "../../tina/__generated__/client";
 import Header from "../nav/header";
 import Footer from "../nav/footer";
 import { cn } from "../../lib/utils";
+import { NO_CACHE_POLICY } from "../../lib/query";
 
 type LayoutProps = PropsWithChildren & {
   rawPageData?: any;
 };
 
 export default async function Layout({ children, rawPageData }: LayoutProps) {
-  const { data: globalData } = await client.queries.global(
-    { relativePath: "index.json" },
-    { fetchOptions: { next: { revalidate: 30 }  } },
-  );
+  const { data: globalData } = await client.queries.global({
+    relativePath: "index.json",
+  }, NO_CACHE_POLICY);
 
   return (
     <LayoutProvider globalSettings={globalData.global} pageData={rawPageData}>

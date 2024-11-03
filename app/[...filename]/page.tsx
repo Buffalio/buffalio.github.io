@@ -2,6 +2,7 @@ import React from "react";
 import client from "../../tina/__generated__/client";
 import ClientPage from "./client-page";
 import Layout from "../../components/layout/layout";
+import { NO_CACHE_POLICY } from "../../lib/query";
 
 export default async function Page({
   params,
@@ -10,7 +11,7 @@ export default async function Page({
 }) {
   const data = await client.queries.page({
     relativePath: `${params.filename}.md`,
-  });
+  }, NO_CACHE_POLICY);
 
   return (
     <Layout rawPageData={data}>
@@ -20,7 +21,7 @@ export default async function Page({
 }
 
 export async function generateStaticParams() {
-  const pages = await client.queries.pageConnection();
+  const pages = await client.queries.pageConnection(null, NO_CACHE_POLICY);
   const paths = pages.data?.pageConnection.edges.map((edge) => ({
     filename: edge.node._sys.breadcrumbs,
   }));
