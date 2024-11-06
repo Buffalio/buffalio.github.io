@@ -6,6 +6,9 @@ blocks:
       ## **Editors ABC**
 
 
+      ![h](/uploads/netlify-build-settings.png)
+
+
       **Click this box to start editing it**. You will see the matching field
       appear in the left sidebar for you to make changes. The edits will show in
       this live preview. In that left panel, you can also navigate around the
@@ -35,7 +38,7 @@ blocks:
         icon: false
         link: /posts
     image:
-      src: /uploads/unsplash-75EFpyXu3Wg.jpg
+      src: /uploads/meme-meo-cute-hai-huoc-1297_374.jpg
       alt: >-
         Photo of palm trees at sunset by Adam Birkett -
         unsplash.com/photos/75EFpyXu3Wg
