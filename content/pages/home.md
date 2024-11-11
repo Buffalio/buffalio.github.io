@@ -38,7 +38,7 @@ blocks:
         icon: false
         link: /posts
     image:
-      src: /uploads/meme-meo-cute-hai-huoc-1297_374.jpg
+      src: /uploads/llama-3.avif
       alt: >-
         Photo of palm trees at sunset by Adam Birkett -
         unsplash.com/photos/75EFpyXu3Wg
