@@ -30,6 +30,12 @@ jobs:
 
     runs-on: ubuntu-latest
     steps:
+      - name: Upload static files as artifact
+        id: deployment
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: buffalio-blog
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
