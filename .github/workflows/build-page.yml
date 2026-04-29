@@ -19,6 +19,9 @@ jobs:
 
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
       - name: Upload static files as artifact
         id: upload-pages-artifact
         uses: actions/upload-pages-artifact@v5
