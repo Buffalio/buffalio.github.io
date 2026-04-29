@@ -10,19 +10,8 @@ permissions:
   pages: write
   id-token: write
 
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
-
-env:
-  PROJECT_DIR: .  # Set the root folder here
-
 jobs:
   deploy:
-
-    permissions:
-      pages: write
-      id-token: write
 
     environment:
       name: github-pages
